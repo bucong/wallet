@@ -7,7 +7,7 @@
           <h2>4.560000</h2>
           <p>HTC</p>
         </div>
-        <img src="/static/img/home-balance.png" alt="">
+        <img src="static/img/home-balance.png" alt="">
       </li>
       <li class="flex">
         <div>
@@ -15,7 +15,7 @@
           <h2>563154</h2>
           <p>2018.01.13 13:31</p>
         </div>
-        <img src="/static/img/home-last.png" alt="">
+        <img src="static/img/home-last.png" alt="">
       </li>
       <li class="flex">
         <div>
@@ -23,7 +23,7 @@
           <h2>1.3.6</h2>
           <p>2018.01.13 mainnet</p>
         </div>
-        <img src="/static/img/home-version.png" alt="">
+        <img src="static/img/home-version.png" alt="">
       </li>
     </ul>
     <h3 class="title">{{ $t("home.transactions") }}</h3>

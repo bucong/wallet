@@ -16,7 +16,7 @@
               <div class="name">{{ $t("account.info.name2") }}</div>
               <div>
                 <span>{{address}}</span>
-                <img src="/static/img/copy.png" alt="" v-clipboard:copy="address" v-clipboard:success="onCopy" v-clipboard:error="onError">
+                <img src="static/img/copy.png" alt="" v-clipboard:copy="address" v-clipboard:success="onCopy" v-clipboard:error="onError">
               </div>
             </li>
             <li>
@@ -29,7 +29,7 @@
               <div class="name">{{ $t("account.info.name4") }}</div>
               <div>
                 <span>{{publicKey}}</span>
-                <img src="/static/img/copy.png" alt="" v-clipboard:copy="publicKey" v-clipboard:success="onCopy" v-clipboard:error="onError">
+                <img src="static/img/copy.png" alt="" v-clipboard:copy="publicKey" v-clipboard:success="onCopy" v-clipboard:error="onError">
               </div>
             </li>
           </ul>

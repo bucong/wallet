@@ -21,7 +21,7 @@
       <textarea v-model="subPassword"></textarea>
       <div class="info">
         <div class="error" v-show="err">
-          <img src="/static/img/login-error.png" alt="">{{ $t("login.error") }}
+          <img src="static/img/login-error.png" alt="">{{ $t("login.error") }}
         </div>
         <p>{{ $t('register.info') }}</p>
       </div>
@@ -52,7 +52,7 @@
       }
     },
     beforeCreate() {
-      document.querySelector('body').setAttribute('style', 'background-image: url(/static/img/login-bg.png);min-width: 700px;');
+      document.querySelector('body').setAttribute('style', 'background-image: url(static/img/login-bg.png);min-width: 700px;');
     },
     created() {
       this.password = crypto.generateSecret();

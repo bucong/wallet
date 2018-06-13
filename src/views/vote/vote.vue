@@ -3,7 +3,7 @@
     <h3 class="title">{{ $t("vote.title") }}</h3>
     <div class="vote-view flex">
       <div @click="showVote">
-        <img src="/static/img/password-see1.png" alt="">
+        <img src="static/img/password-see1.png" alt="">
         {{ $t("vote.view.prompt") }} (<span>0</span>/33)
       </div>
       <button @click="confirmVote">{{ $t("vote.view.btn") }}</button>

@@ -2,7 +2,7 @@
   <div class="forging">
     <h3 class="title">{{ $t("delegate.title1") }}</h3>
     <div class="no-delegate" v-show="!isDelegate">
-      <img src="/static/img/no-delegate.png" alt="">
+      <img src="static/img/no-delegate.png" alt="">
       <p>{{ $t("delegate.noDelegate.prompt") }}</p>
       <button @click="dialogFormVisible = true">{{ $t("delegate.noDelegate.registerBtn") }}</button>
     </div>

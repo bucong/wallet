@@ -1,21 +1,21 @@
 <template>
   <div class="login">
     <div class="flex">
-      <img src="/static/img/login-logo.png" class="login-logo" alt="">
+      <img src="static/img/login-logo.png" class="login-logo" alt="">
       <div class="language-box">
         <ul class="language">
-          <li v-for="item in language" @click="switchLang(item.lang)"><img :src="'/static/img/language-'+item.lang+'.png'" alt="">{{item.value}}</li>
+          <li v-for="item in language" @click="switchLang(item.lang)"><img :src="'static/img/language-'+item.lang+'.png'" alt="">{{item.value}}</li>
         </ul>
       </div>
     </div>
     <div class="text-box">
       <textarea name="" v-show="see === 1" :placeholder="$t('login.placeholder')" v-model="password"></textarea>
       <input type="password" v-show="see === 2" :placeholder="$t('login.placeholder')" v-model="password">
-      <img :src="'/static/img/password-see'+see+'.png'" @click="seePassword" alt="">
+      <img :src="'static/img/password-see'+see+'.png'" @click="seePassword" alt="">
     </div>
     <div class="error-box">
       <div class="error" v-show="err">
-        <img src="/static/img/login-error.png" alt="">{{ $t("login.error") }}
+        <img src="static/img/login-error.png" alt="">{{ $t("login.error") }}
       </div>
     </div>
     <div class="flex">
@@ -47,7 +47,7 @@ export default {
     }
   },
   beforeCreate () {
-    document.querySelector('body').setAttribute('style', 'background-image: url(/static/img/login-bg.png);min-width: 700px;');
+    document.querySelector('body').setAttribute('style', 'background-image: url(static/img/login-bg.png);min-width: 700px;');
   },
   beforeMount() {
     let lang = localStorage.lang || 'en';

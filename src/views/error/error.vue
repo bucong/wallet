@@ -31,7 +31,7 @@ export default {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url(/static/img/404.jpg);
+  background-image: url('../../../static/img/404.jpg');
   background-size: cover;
   background-position: center;
 }

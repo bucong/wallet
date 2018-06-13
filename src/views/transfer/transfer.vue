@@ -7,14 +7,14 @@
             <h5>{{ $t("transfer.form.recipient") }}</h5>
             <div class="input-box">
               <input type="text" v-model="recipient" :placeholder="$t('transfer.form.recipientPlaceholder')"/>
-              <span v-show="recipientErr"><img src="/static/img/login-error.png" alt="">{{ $t("transfer.form.recipientErr") }}</span>
+              <span v-show="recipientErr"><img src="static/img/login-error.png" alt="">{{ $t("transfer.form.recipientErr") }}</span>
             </div>
           </li>
           <li>
             <h5>{{ $t("transfer.form.amount") }}</h5>
             <div class="input-box">
               <input type="text" id="amount" v-model="amount" :placeholder="$t('transfer.form.amountPlaceholder')"/>
-              <span v-show="amountErr"><img src="/static/img/login-error.png" alt="">{{ $t("transfer.form.amountErr") }}</span>
+              <span v-show="amountErr"><img src="static/img/login-error.png" alt="">{{ $t("transfer.form.amountErr") }}</span>
               <label for="amount">HTC</label>
             </div>
           </li>
